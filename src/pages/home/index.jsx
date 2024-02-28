@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { boards, exams, years } from "../../utils";
+import bdlogo from "../../assets/bd_logo.png";
+import bannerflag from "../../assets/banner_flag.jpg";
+import tbl from "../../assets/tbl_logo.png";
 
 const Home = () => {
   const [exam, setExam] = useState("hsc_alim_equivalent");
@@ -28,12 +31,12 @@ const Home = () => {
       <div className="shadow-2xl bg-white p-2 mt-4 rounded-md w-[650px]">
         <div className="w-full flex bg-gray-200">
           <div className="flex items-center w-[142px] justify-center">
-            <img src="http://www.educationboardresults.gov.bd/images/bd_logo.png" />
+            <img src={bdlogo} />
           </div>
           <div className="flex-1">
             <div className="flex justify-between items-center bg-[#007814] text-[#95e17d] font-bold">
               <h1 className="text-[17px] pl-2">Ministry of Education</h1>
-              <img src="http://www.educationboardresults.gov.bd/images/banner_flag.jpg" />
+              <img src={bannerflag} />
             </div>
             <div className="block h-[1px] w-full bg-[#95e17d]" />
             <div className="bg-[#007814] px-2 py-1 font-bold text-[20px] leading-tight text-white">
@@ -167,7 +170,7 @@ const Home = () => {
           </p>
           <div className="flex items-center gap-4">
             <p className="text-[#666666] text-[10px]">Powered by</p>
-            <img src="http://www.educationboardresults.gov.bd/images/tbl_logo.png" />
+            <img src={tbl} />
           </div>
         </div>
       </div>
